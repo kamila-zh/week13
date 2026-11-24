@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f3ef;
+    color: #9473ff;
+    line-height: 1.7;
+}
+
+header {
+    background: #263c36;
+    color: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 17px;
+    color: #d5e0d9;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 16px 20px;
+    background: #1e302b;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #c9ddcf;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #35594b;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.highlight {
+    color: #547b68;
+    font-weight: 600;
+}
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.achievement {
+    background: #f1f4f0;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #547b68;
+}
+
+.achievement h3 {
+    color: #35594b;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+a {
+    color: #547b68;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #263c36;
+    color: #d5e0d9;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+}
+img { max-width: 100%; }
